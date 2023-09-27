@@ -108,7 +108,7 @@ class MetaCorgiSnacks
     @box_id = box_id
   end
 
-  #phase 1
+  # phase 1
   def method_missing(name, *args)
     info = @snack_box.send("get_#{name}_info", @box_id)
     tastiness = @snack_box.send("get_#{name}_tastiness", @box_id)
